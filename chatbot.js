@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="chatbot-panel" style="display: none;">
         <div class="chatbot-header">
           <div class="chatbot-title">
-            <img src="fotos/ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" class="chatbot-logo">
+            <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" class="chatbot-logo">
             <span>Asistente Global Code</span>
           </div>
           <button class="chatbot-close" id="chatbot-close">
