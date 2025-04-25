@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="intro-content">
         <div class="logo-container">
           <div class="logo-circle"></div>
-          <img src="fotos/ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" class="intro-logo">
+          <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" class="intro-logo">
         </div>
         <div class="tagline-container">
           <div class="tagline-line">TRANSFORMAMOS</div>
