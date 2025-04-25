@@ -1,0 +1,398 @@
+/* Estilos para la sección de contacto */
+.contact-section {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--white);
+  overflow: hidden;
+  color: var(--dark-gray);
+}
+
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 1) 70%);
+  z-index: 1;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-section .section-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 4;
+  padding: 20px 0;
+}
+
+.contact-section .section-subtitle {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 20px;
+}
+
+/* Terminal de contacto */
+.terminal-container {
+  width: 100%;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+#terminal-contact {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  transform: rotateX(5deg);
+}
+
+#terminal-contact:hover {
+  transform: rotateX(0);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.terminal-header {
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.terminal-button.close {
+  background-color: #ff5f56;
+}
+
+.terminal-button.minimize {
+  background-color: #ffbd2e;
+}
+
+.terminal-button.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.terminal-body {
+  padding: 30px;
+  height: 400px;
+  overflow-y: auto;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.terminal-content {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Mensajes de la terminal */
+.boot-message {
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+  transition: opacity 0.3s ease;
+}
+
+.terminal-message {
+  margin-bottom: 10px;
+}
+
+.terminal-error {
+  color: #ff5f56;
+  margin: 10px 0;
+}
+
+.terminal-success {
+  color: #27c93f;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.terminal-restart {
+  color: var(--primary-blue);
+  margin: 10px 0;
+}
+
+.terminal-response {
+  color: #333;
+  margin: 5px 0 15px 0;
+  padding-left: 20px;
+  border-left: 2px solid rgba(0, 136, 224, 0.3);
+}
+
+/* Contenedores de entrada */
+.terminal-input-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-prompt {
+  color: var(--primary-blue);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Estilos modernos para inputs */
+.terminal-input {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  opacity: 1 !important;
+}
+
+.terminal-input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 5px 15px rgba(0, 136, 224, 0.1);
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.terminal-input.error {
+  border-color: #ff5f56;
+  box-shadow: 0 5px 15px rgba(255, 95, 86, 0.1);
+  animation: shake 0.5s;
+}
+
+.terminal-input.completed {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  color: #333;
+}
+
+textarea.terminal-input {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+.input-help-text {
+  font-size: 11px;
+  color: #999;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+/* Botón de envío */
+.terminal-submit {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 136, 224, 0.5);
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: var(--dark-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px -5px rgba(0, 136, 224, 0.6);
+}
+
+.submit-button:active {
+  transform: translateY(-1px);
+}
+
+.submit-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  animation: shineEffect 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shineEffect {
+  0% {
+    left: -50%;
+    top: -50%;
+  }
+  100% {
+    left: 150%;
+    top: 150%;
+  }
+}
+
+/* Loader para el botón */
+.loader {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Estilos para el scrollbar de la terminal */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .terminal-body {
+    height: 350px;
+    padding: 20px;
+  }
+
+  .terminal-input {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .terminal-body {
+    height: 300px;
+    padding: 15px;
+  }
+
+  .terminal-content {
+    font-size: 13px;
+  }
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-section .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .terminal-input {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,26 @@
+/* Este archivo contiene estilos para evitar que la sección de contacto aparezca brevemente al cargar */
+
+/* Ocultar la sección de contacto inicialmente */
+#contact {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+  }
+  
+  /* Mostrar la sección de contacto solo cuando se hace scroll hasta ella */
+  #contact.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Asegurar que la sección hero tenga suficiente altura para llenar la pantalla */
+  .hero {
+    min-height: 100vh;
+  }
+  
+  /* NO modificar la visibilidad de los elementos dentro del hero */
+  .hero * {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  

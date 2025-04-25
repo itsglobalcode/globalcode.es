@@ -1,0 +1,109 @@
+/* Estilos para la página de política de privacidad */
+.privacy-main {
+  padding: 120px 0 60px;
+  background-color: var(--white);
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.privacy-container h1 {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.last-updated {
+  text-align: center;
+  color: var(--dark-gray);
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.privacy-section {
+  margin-bottom: 40px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-section h2 {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 136, 224, 0.2);
+}
+
+.privacy-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.privacy-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-section ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.privacy-section strong {
+  color: var(--dark-blue);
+}
+
+.contact-details {
+  background-color: rgba(0, 136, 224, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.contact-details p {
+  margin-bottom: 8px;
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 768px) {
+  .privacy-main {
+    padding: 100px 0 40px;
+  }
+
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-section {
+    padding: 20px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .privacy-main {
+    padding: 90px 0 30px;
+  }
+
+  .privacy-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-section {
+    padding: 15px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.2rem;
+  }
+}

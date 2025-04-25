@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Code - Empresa de desarrollo de software especializada en soluciones tecnológicas innovadoras">
+    <title>Global Code - Desarrollo de Software</title>
+    <!-- IMPORTANTE: Cargar el script de bloqueo de scroll antes que cualquier otro -->
+    <script src="scroll-fix.js"></script>
+    <!-- Estilos después del script de bloqueo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="stylesheet" href="intro-styles.css">
+    <link rel="stylesheet" href="cookies-styles.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Agregar meta para evitar caché -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Agregar después de las otras hojas de estilo -->
+    <link rel="stylesheet" href="contact-section-fix.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="theme-toggle.js" defer></script>
+    <script src="theme-effects.js" defer></script>
+    <script src="fix-typewriter.js" defer></script>
+</head>
+<body onload="window.scrollTo(0,0);" style="scroll-behavior: auto !important;">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#" title="Ir al inicio">
+                        <img src="fotos/ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" style="background: transparent;">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Modificar la navegación para eliminar "Proyectos" y añadir "Tecnologías" -->
+                <!-- Cambiar el orden de los elementos en la navegación -->
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Inicio</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#technologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#contact" class="nav-link btn-contacto">Contacto</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <i class="fas fa-sun sun"></i>
+                            <i class="fas fa-moon moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section con Orb - Asegurarse de que esta es la primera sección -->
+        <section class="hero">
+            <div class="orb-wrapper">
+                <div class="orb-container">
+                    <canvas id="orbCanvas"></canvas>
+                </div>
+                <div class="hero-content">
+                    <div class="text-container">
+                        <div class="line-1">Convierte tus ideas</div>
+                        <div class="line-2">en realidad</div>
+                    </div>
+                    <a href="#contact" class="btn-meeting">Agendar Reunión</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- El resto de las secciones... -->
+
+<!-- Actualizar la sección de servicios para asegurar que el texto sea correcto -->
+<section id="services" class="services-section">
+    <div class="services-background"></div>
+    
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Nuestros Servicios</h2>
+        <p class="section-subtitle animate-on-scroll">Soluciones tecnológicas a medida para impulsar tu negocio</p>
+        
+        <div class="services-grid">
+            <!-- Servicio 1: Desarrollo Web -->
+            <div class="service-card animate-on-scroll" data-delay="0">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Desarrollo Web</h3>
+                <p>Creamos sitios corporativos profesionales y landing pages de alto impacto optimizados para conversión, con diseño responsive y experiencia de usuario excepcional.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Sitios corporativos</span>
+                    <span class="service-tag">Landing pages</span>
+                </div>
+            </div>
+            
+            <!-- Servicio 2: Web Apps -->
+            <div class="service-card animate-on-scroll" data-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Apps</h3>
+                <p>Desarrollamos aplicaciones web sofisticadas como plataformas SaaS y herramientas internas que optimizan procesos y mejoran la productividad de tu empresa.</p>
+                <div class="service-tags">
+                    <span class="service-tag">SaaS</span>
+                    <span class="service-tag">Herramientas internas</span>
+                </div>
+            </div>
+            
+            <!-- Servicio 3: Apps Móviles -->
+            <div class="service-card animate-on-scroll" data-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Apps Móviles</h3>
+                <p>Creamos aplicaciones nativas y multiplataforma para iOS y Android con interfaces intuitivas, alto rendimiento y experiencias de usuario excepcionales.</p>
+                <div class="service-tags">
+                    <span class="service-tag">iOS</span>
+                    <span class="service-tag">Android</span>
+                </div>
+            </div>
+            
+            <!-- Servicio 4: Automatizaciones con IA -->
+            <div class="service-card animate-on-scroll" data-delay="600">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Automatizaciones con IA</h3>
+                <p>Implementamos soluciones inteligentes que automatizan procesos, chatbots personalizados y sistemas de data scraping para obtener insights valiosos de tus datos.</p>
+                <div class="service-tags">
+                    <span class="service-tag">Chatbots</span>
+                    <span class="service-tag">Procesos</span>
+                    <span class="service-tag">Data scraping</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Elemento parallax decorativo -->
+    <div class="parallax-decoration">
+        <div class="parallax-circle parallax" data-speed="0.2"></div>
+        <div class="parallax-circle parallax" data-speed="0.1"></div>
+        <div class="parallax-circle parallax" data-speed="0.3"></div>
+    </div>
+</section>
+<!-- Añadir la sección de tecnologías después de la sección de servicios -->
+<!-- Añadir después de la sección de servicios y antes del cierre de main -->
+<section id="technologies" class="technologies-section">
+    <div class="container">
+        <h2 class="section-title">Nuestras Tecnologías</h2>
+        <p class="section-subtitle">Utilizamos las herramientas más avanzadas para crear soluciones de alta calidad</p>
+        
+        <div class="tech-slider-container">
+            <!-- Slider principal -->
+            <div class="tech-slider">
+                <!-- Slide 1: Frontend -->
+                <div class="tech-slide">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <h4>React</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Interfaces de usuario dinámicas y de alto rendimiento que mejoran la experiencia del cliente y aumentan las conversiones hasta un 30%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-angular"></i>
+                                    </div>
+                                    <h4>Angular</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Aplicaciones empresariales robustas y escalables que reducen costos de mantenimiento y ofrecen mayor seguridad para su negocio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-vuejs"></i>
+                                    </div>
+                                    <h4>Vue.js</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Desarrollo ágil y flexible que permite lanzar productos al mercado hasta un 40% más rápido, adaptándose a cambios de negocio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <h4>JavaScript</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>El lenguaje universal de la web que garantiza compatibilidad en todos los dispositivos, aumentando su alcance de mercado en un 100%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Backend -->
+                <div class="tech-slide">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-node-js"></i>
+                                    </div>
+                                    <h4>Node.js</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Servidores de alto rendimiento que soportan miles de usuarios simultáneos, reduciendo costos de infraestructura hasta un 60%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <h4>Python</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Análisis de datos e IA que transforman su información en decisiones estratégicas, aumentando la eficiencia operativa hasta un 45%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-java"></i>
+                                    </div>
+                                    <h4>Java</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Sistemas empresariales de misión crítica con 99.9% de disponibilidad, garantizando la continuidad de su negocio en todo momento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>SQL</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Gestión de datos optimizada que acelera consultas hasta 10 veces, permitiendo tomar decisiones de negocio en tiempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Desarrollo Móvil -->
+                <div class="tech-slide">
+                    <h3 class="category-title">Desarrollo Móvil</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <h4>React Native</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Apps multiplataforma que reducen costos de desarrollo en un 50% y llegan al mercado en la mitad del tiempo que el desarrollo nativo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-android"></i>
+                                    </div>
+                                    <h4>Android</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Acceso al 85% del mercado global de smartphones con experiencias personalizadas que aumentan la retención de usuarios en un 35%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-apple"></i>
+                                    </div>
+                                    <h4>iOS</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Aplicaciones premium para el segmento de mayor poder adquisitivo, con un 65% más de gasto por usuario que otras plataformas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>Flutter</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Interfaces visuales impactantes con rendimiento nativo que aumentan el engagement en un 40% y reducen las tasas de abandono.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4: Cloud & DevOps -->
+                <div class="tech-slide">
+                    <h3 class="category-title">Cloud & DevOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-aws"></i>
+                                    </div>
+                                    <h4>AWS</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Infraestructura escalable que reduce costos operativos hasta un 70% y permite crecer sin límites según la demanda de su negocio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <h4>Google Cloud</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Análisis de datos e IA de clase mundial que transforman su información en ventajas competitivas y nuevas oportunidades de negocio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-docker"></i>
+                                    </div>
+                                    <h4>Docker</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Despliegues 10 veces más rápidos y consistentes que eliminan errores en producción y mejoran la confiabilidad de sus servicios.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-card-inner">
+                                <div class="tech-card-front">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h4>GitHub</h4>
+                                </div>
+                                <div class="tech-card-back">
+                                    <p>Colaboración eficiente y control de calidad que reduce errores en un 80% y acelera el tiempo de entrega de nuevas funcionalidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegación del slider -->
+            <div class="slider-nav">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="slider-dot active" data-slide="0"></span>
+                    <span class="slider-dot" data-slide="1"></span>
+                    <span class="slider-dot" data-slide="2"></span>
+                    <span class="slider-dot" data-slide="3"></span>
+                </div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nueva sección Sobre Nosotros con animación 3D y diseño centrado -->
+<section id="about" class="about-section">
+    <div class="about-background"></div>
+    
+    <div class="container">
+        <!-- Título centrado -->
+        <h2 class="section-title">Sobre Nosotros</h2>
+        
+        <!-- Contenedor flexible para texto e imagen -->
+        <div class="about-flex-container">
+            <!-- Columna izquierda para el texto -->
+            <div class="about-text-column">
+                <div class="about-tagline">
+                    <span class="highlight">Redefiniendo</span> el desarrollo de software
+                </div>
+                
+                <p class="about-description">
+                    Global Code es una compañía de <span class="highlight">nueva generación</span> fundada por expertos apasionados por la tecnología y la innovación. Nacimos en la era digital con un enfoque fresco y disruptivo, libres de las limitaciones de metodologías obsoletas.
+                </p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Agilidad Extrema</h3>
+                            <p>Entregamos resultados hasta 3 veces más rápido que las empresas tradicionales gracias a nuestros procesos optimizados y tecnologías de vanguardia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Innovación Constante</h3>
+                            <p>Integramos IA, blockchain y tecnologías emergentes en soluciones prácticas que generan ventajas competitivas reales para nuestros clientes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Equipo de Élite</h3>
+                            <p>Nuestro talento proviene de las mejores empresas tecnológicas del mundo, combinando experiencia de Silicon Valley con creatividad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna derecha para la imagen circular -->
+            <div class="about-image-column">
+                <div class="circular-frame">
+                    <div class="circular-frame-inner">
+                        <img src="fotos/pexels-djordje-petrovic-590080-2102416.jpg" alt="Espacio de trabajo de Global Code" class="office-image">
+                    </div>
+                    <div class="circular-frame-border"></div>
+                    <div class="circular-frame-glow"></div>
+                    <div class="circular-frame-code"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Estadísticas debajo -->
+        <div class="about-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Proyectos Exitosos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">% Satisfacción</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Expertos Tech</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="3">0</div>
+                <div class="stat-label">Premios de Innovación</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nueva sección de Contacto con formulario de Formspree -->
+<!-- Restaurar la terminal de contacto e integrar el formulario de Formspree -->
+<section id="contact" class="contact-section">
+   <div class="contact-background"></div>
+   
+   <div class="container">
+       <h2 class="section-title">Contacto</h2>
+       <p class="section-subtitle">Inicia un nuevo proyecto con nosotros</p>
+       
+       <div id="terminal-contact" class="terminal-container">
+           <div class="terminal-header">
+               <div class="terminal-buttons">
+                   <span class="terminal-button close"></span>
+                   <span class="terminal-button minimize"></span>
+                   <span class="terminal-button maximize"></span>
+               </div>
+               <div class="terminal-title">Global_Code ~ Terminal</div>
+           </div>
+           
+           <div class="terminal-body">
+               <div class="terminal-content">
+                   <!-- El contenido se generará dinámicamente con JavaScript -->
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="orb.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="scroll-animations.js"></script>
+    <script src="techslider.js"></script>
+    <script src="contact-terminal.js"></script>
+    <script src="intro-animation.js"></script>
+    <script src="cookies-popup.js"></script>
+    <!-- Añadir Three.js para animaciones 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP para animaciones suaves -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Nuestro script de animación 3D -->
+    <script src="about-animation.js"></script>
+    <!-- Script para animar los números de estadísticas -->
+    <script>
+        // Animación de contadores
+        document.addEventListener("DOMContentLoaded", () => {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            // Función para animar contadores
+            function animateCounter(el) {
+                const target = parseInt(el.getAttribute('data-count'));
+                const duration = 2000; // 2 segundos
+                const step = target / duration * 10;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current > target) {
+                        el.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        el.textContent = Math.floor(current);
+                    }
+                }, 10);
+            }
+            
+            // Observador de intersección para iniciar animación cuando sea visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            // Observar cada contador
+            statNumbers.forEach(stat => {
+                observer.observe(stat);
+            });
+        });
+    </script>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="fotos/ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo">
+                <p class="footer-tagline">Convierte tus ideas en realidad</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#technologies">Tecnologías</a></li>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#services">Desarrollo Web</a></li>
+                        <li><a href="#services">Web Apps</a></li>
+                        <li><a href="#services">Apps Móviles</a></li>
+                        <li><a href="#services">Automatizaciones con IA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-envelope"></i> itsglobalcodeinfo@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +34 628 38 32 04</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/marco-moreno-04770634a/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/itsglobalcode" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Global Code. Todos los derechos reservados. <a href="privacy-policy.html" class="footer-policy-link">Política de Privacidad</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Script para mostrar el estado de las cookies (solo para demostración) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Función para leer cookies
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+            
+            // Mostrar el estado actual de las cookies en la consola
+            console.log("Estado de cookies:");
+            console.log("- Aceptadas: " + (getCookie("cookiesAccepted") || "No definido"));
+            console.log("- Necesarias: " + (getCookie("cookieNecessary") || "No definido"));
+            console.log("- Analíticas: " + (getCookie("cookieAnalytics") || "No definido"));
+            console.log("- Marketing: " + (getCookie("cookieMarketing") || "No definido"));
+            
+            // También mostrar desde localStorage (respaldo)
+            console.log("Respaldo en localStorage:");
+            console.log("- Aceptadas: " + (localStorage.getItem("cookiesAccepted") || "No definido"));
+            console.log("- Preferencias: " + (localStorage.getItem("cookiePreferences") || "No definido"));
+        });
+    </script>
+    <!-- Agregar antes de cerrar el body -->
+    <script src="section-visibility.js"></script>
+
+<script src="theme-effects.js"></script>
+
+    <!-- Agregar el nuevo script para arreglar la animación del hero -->
+    <script src="fix-hero-animation.js"></script>
+</body>
+</html>
