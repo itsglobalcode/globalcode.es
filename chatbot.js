@@ -44,6 +44,60 @@ document.addEventListener("DOMContentLoaded", () => {
     const chatbotSend = document.getElementById("chatbot-send")
     const chatbotMessages = document.getElementById("chatbot-messages")
 
+    // Event listeners
+    chatbotToggle.addEventListener("click", () => {
+      chatbotPanel.style.display = "flex" // Cambio de block a flex para mantener la estructura
+      chatbotInput.focus()
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight
+
+      // Ocultar el botón cuando el panel está visible
+      chatbotToggle.style.display = "none"
+
+      // En móviles, añadir clase al body para prevenir scroll
+      if (window.innerWidth <= 576) {
+        document.body.style.overflow = "hidden"
+      }
+    })
+
+    chatbotClose.addEventListener("click", () => {
+      chatbotPanel.style.display = "none"
+
+      // Mostrar el botón cuando el panel está oculto
+      chatbotToggle.style.display = "flex"
+
+      // Restaurar scroll
+      document.body.style.overflow = "auto"
+    })
+
+    chatbotSend.addEventListener("click", sendMessage)
+
+    chatbotInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault() // Evitar el salto de línea por defecto
+        sendMessage()
+      }
+    })
+
+    // Ajustar la altura del textarea dinámicamente cuando el usuario escribe
+    chatbotInput.addEventListener("input", () => {
+      chatbotInput.style.height = "auto"
+      chatbotInput.style.height = Math.min(chatbotInput.scrollHeight, 100) + "px"
+    })
+
+    // Detectar cambios de tamaño de ventana para ajustar el chatbot
+    window.addEventListener("resize", () => {
+      if (chatbotPanel.style.display !== "none") {
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight
+
+        // Ajustar overflow del body según el tamaño de la pantalla
+        if (window.innerWidth <= 576) {
+          document.body.style.overflow = "hidden"
+        } else {
+          document.body.style.overflow = "auto"
+        }
+      }
+    })
+
     // Base de conocimiento para el chatbot
     const knowledgeBase = {
       // Información General sobre la Empresa
@@ -1047,11 +1101,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function addMessage(text, type) {
       const messageDiv = document.createElement("div")
       messageDiv.className = `chatbot-message ${type}`
-      
+
       // Convertir saltos de línea en HTML para mejor formato
       text = text.replace(/\n/g, "<br>")
       messageDiv.innerHTML = text
-      
+
       chatbotMessages.appendChild(messageDiv)
       chatbotMessages.scrollTop = chatbotMessages.scrollHeight
     }
@@ -1087,7 +1141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listeners
     chatbotToggle.addEventListener("click", () => {
-      chatbotPanel.style.display = "flex"  // Cambio de block a flex para mantener la estructura
+      chatbotPanel.style.display = "flex" // Cambio de block a flex para mantener la estructura
       chatbotInput.focus()
       chatbotMessages.scrollTop = chatbotMessages.scrollHeight
     })
