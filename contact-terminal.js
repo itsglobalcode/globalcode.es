@@ -9,33 +9,33 @@ try {
     const terminalBody = terminal.querySelector(".terminal-body")
     // Add a class to the body when terminal inputs are focused to prevent scrolling issues
     const preventZoomOnFocus = () => {
-      const inputs = terminal.querySelectorAll('input, textarea');
-      
-      inputs.forEach(input => {
-        input.addEventListener('focus', () => {
-          document.body.classList.add('input-focused');
-          
+      const inputs = terminal.querySelectorAll("input, textarea")
+
+      inputs.forEach((input) => {
+        input.addEventListener("focus", () => {
+          document.body.classList.add("input-focused")
+
           // Scroll the terminal into view when input is focused
           setTimeout(() => {
-            terminalBody.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }, 300);
-        });
-        
-        input.addEventListener('blur', () => {
-          document.body.classList.remove('input-focused');
-        });
-      });
-    };
-    
+            terminalBody.scrollIntoView({ behavior: "smooth", block: "nearest" })
+          }, 300)
+        })
+
+        input.addEventListener("blur", () => {
+          document.body.classList.remove("input-focused")
+        })
+      })
+    }
+
     // Call this function after inputs are created
     const setupMobileInputs = () => {
-      preventZoomOnFocus();
-      
+      preventZoomOnFocus()
+
       // Ensure the terminal is visible on mobile
       if (isMobile) {
-        terminal.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        terminal.scrollIntoView({ behavior: "smooth", block: "nearest" })
       }
-    };
+    }
     const terminalForm = terminal.querySelector(".terminal-form")
 
     // Función para detectar dispositivo móvil
@@ -191,7 +191,7 @@ try {
       // Enfocar el input
       setTimeout(() => {
         input.focus()
-        setupMobileInputs();
+        setupMobileInputs()
         terminalBody.scrollTop = terminalBody.scrollHeight
       }, 100)
 
@@ -290,7 +290,7 @@ try {
         button.disabled = true
         button.innerHTML = `<span class="loader"></span> Procesando...`
 
-        // Crear FormData para enviar
+        // Crear FormData para enviar a Formspree
         const formDataToSend = new FormData()
 
         // Añadir los datos recopilados
