@@ -31,8 +31,8 @@
     }
   ],
   "theme_color": "#0088e0",
-  "background_color": "#ffffff",
-  "start_url": "/",
+  "background_color": "#002147",
+  "start_url": "https://globalcode.online/",
   "display": "standalone",
   "orientation": "portrait"
 }
