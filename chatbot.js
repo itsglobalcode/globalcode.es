@@ -129,25 +129,53 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
 
-    // Ajustar la altura del textarea dinámicamente cuando el usuario escribe
+    // Adjust the height of the textarea dynamically when the user types
     chatbotInput.addEventListener("input", () => {
-      chatbotInput.style.height = "auto"
-      chatbotInput.style.height = Math.min(chatbotInput.scrollHeight, 100) + "px"
-    })
+      chatbotInput.style.height = "auto";
+      chatbotInput.style.height = Math.min(chatbotInput.scrollHeight, 100) + "px";
+    });
+    
+    // Prevent zoom on focus for mobile devices
+    chatbotInput.addEventListener("focus", () => {
+      // Add a class to the body to help with styling
+      document.body.classList.add('chatbot-focused');
+      
+      // On iOS, scroll the panel into view
+      setTimeout(() => {
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+      }, 300);
+    });
+    
+    chatbotInput.addEventListener("blur", () => {
+      document.body.classList.remove('chatbot-focused');
+    });
 
-    // Detectar cambios de tamaño de ventana para ajustar el chatbot
+    // Handle window resize and keyboard appearance on mobile
     window.addEventListener("resize", () => {
       if (chatbotPanel.style.display !== "none") {
-        chatbotMessages.scrollTop = chatbotMessages.scrollHeight
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
 
-        // Ajustar overflow del body según el tamaño de la pantalla
+        // Adjust for mobile keyboard
         if (window.innerWidth <= 576) {
-          document.body.style.overflow = "hidden"
+          // Check if keyboard is likely open (significant height reduction)
+          const isKeyboardOpen = window.innerHeight < window.outerHeight * 0.75;
+          
+          if (isKeyboardOpen) {
+            chatbotPanel.style.height = "60vh"; // Reduce height when keyboard is open
+            chatbotMessages.style.maxHeight = "40vh";
+          } else {
+            chatbotPanel.style.height = "70vh"; // Normal height
+            chatbotMessages.style.maxHeight = "50vh";
+          }
+          
+          document.body.style.overflow = "hidden";
         } else {
-          document.body.style.overflow = "auto"
+          document.body.style.overflow = "auto";
+          chatbotPanel.style.height = "";
+          chatbotMessages.style.maxHeight = "";
         }
       }
-    })
+    });
 
     // Base de conocimiento para el chatbot
     const knowledgeBase = {
