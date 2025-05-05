@@ -237,7 +237,7 @@ textarea.terminal-input {
 }
 
 .submit-button {
-  background-color: var(--primary-blue);
+  background-color: #2d3748;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -249,15 +249,15 @@ textarea.terminal-input {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 136, 224, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(45, 55, 72, 0.5);
   margin-top: 15px;
   align-self: flex-start;
 }
 
 .submit-button:hover {
-  background-color: var(--dark-blue);
+  background-color: #1a202c;
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px -5px rgba(0, 136, 224, 0.6);
+  box-shadow: 0 15px 30px -5px rgba(45, 55, 72, 0.6);
 }
 
 .submit-button:active {
@@ -275,17 +275,6 @@ textarea.terminal-input {
   transform: rotate(45deg);
   animation: shineEffect 3s infinite;
   pointer-events: none;
-}
-
-@keyframes shineEffect {
-  0% {
-    left: -50%;
-    top: -50%;
-  }
-  100% {
-    left: 150%;
-    top: 150%;
-  }
 }
 
 /* Loader para el botón */
@@ -451,5 +440,21 @@ body.input-focused .terminal-body {
 
   #terminal-contact {
     transform: none !important;
+  }
+}
+
+.success-animation {
+  animation: successPulse 1.5s ease-in-out;
+}
+
+@keyframes successPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
   }
 }
