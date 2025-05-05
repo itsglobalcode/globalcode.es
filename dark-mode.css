@@ -1,0 +1,645 @@
+/* Variables para modo claro (default) */
+:root {
+    --primary-blue: #0088e0;
+    --dark-blue: #003b73;
+    --light-blue: #4db5ff;
+    --purple: #9c42fe;
+    --light-purple: #b57bff;
+    --dark-purple: #4a0082;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --white: #ffffff;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --footer-bg: #003b73;
+    --footer-text: rgba(255, 255, 255, 0.7);
+    --navbar-bg: rgba(255, 255, 255, 0.95);
+    --navbar-shadow: rgba(0, 0, 0, 0.05);
+    --terminal-bg: #1a1a1a;
+    --terminal-header: #333;
+    --terminal-text: #f8f8f8;
+    --transition: all 0.3s ease;
+    --services-bg: var(--white);
+    --tech-bg: var(--light-gray);
+    --about-bg: var(--light-gray);
+    --contact-bg: var(--dark-blue);
+    --card-border: transparent;
+    --tech-card-bg: var(--white);
+    --tech-card-back: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    --tech-card-text: var(--dark-gray);
+    --tech-card-back-text: white;
+    --about-feature-bg: white;
+    --stat-item-bg: white;
+    --contact-method-bg: rgba(255, 255, 255, 0.05);
+    --contact-method-hover: rgba(255, 255, 255, 0.1);
+    --slider-container-bg: var(--white);
+    --slider-dot-bg: #ddd;
+    --slider-dot-active: var(--primary-blue);
+    --service-tag-bg: rgba(0, 136, 224, 0.15);
+    --service-tag-color: var(--primary-blue);
+    --parallax-circle-opacity: 0.2;
+    --orb-glow: rgba(255, 255, 255, 0.1);
+    --orb-shadow: rgba(0, 0, 0, 0.1);
+    --nav-menu-bg: var(--white);
+    --nav-link-border: transparent;
+    --btn-contacto-bg: var(--primary-blue);
+    --btn-contacto-color: var(--white);
+    --btn-contacto-hover-bg: var(--dark-blue);
+    --btn-contacto-hover-color: var(--white);
+  }
+  
+  /* Variables para modo oscuro */
+  [data-theme="dark"] {
+    --primary-blue: #4db5ff;
+    --dark-blue: #0088e0;
+    --light-blue: #0088e0;
+    --purple: #b57bff;
+    --light-purple: #9c42fe;
+    --dark-purple: #6a1b9a;
+    --light-gray: #2a2a2a;
+    --dark-gray: #f5f5f5;
+    --white: #1a1a1a;
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(0, 0, 0, 0.2);
+    --footer-bg: #1a1a1a;
+    --footer-text: rgba(255, 255, 255, 0.8);
+    --navbar-bg: rgba(26, 26, 26, 0.95);
+    --navbar-shadow: rgba(0, 0, 0, 0.2);
+    --terminal-bg: #1a1a1a;
+    --terminal-header: #2a2a2a;
+    --terminal-text: #f5f5f5;
+    --nav-menu-bg: #1a1a1a;
+    --nav-link-border: transparent;
+    --btn-contacto-bg: var(--primary-blue);
+    --btn-contacto-color: #121212;
+    --btn-contacto-hover-bg: var(--light-blue);
+    --btn-contacto-hover-color: #121212;
+  }
+  
+  /* Aplicar colores a elementos */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background-color: var(--navbar-bg);
+    box-shadow: 0 2px 10px var(--navbar-shadow);
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+    border: 1px solid var(--nav-link-border);
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary-blue);
+  }
+  
+  /* Botón de contacto - Estilos unificados */
+  .btn-contacto {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+    padding: 10px 20px !important;
+    border-radius: 30px;
+    transition: var(--transition);
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-contacto:hover {
+    background-color: var(--dark-blue);
+    color: var(--white) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Secciones */
+  .services-section,
+  .technologies-section,
+  .about-section,
+  .contact-section {
+    background-color: var(--bg-color);
+  }
+  
+  .services-background,
+  .about-background {
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 1) 70%);
+  }
+  
+  [data-theme="dark"] .services-background,
+  [data-theme="dark"] .about-background {
+    background: radial-gradient(circle at center, rgba(26, 26, 26, 0.9) 0%, rgba(18, 18, 18, 1) 70%);
+  }
+  
+  /* Títulos y subtítulos */
+  .section-title {
+    color: var(--dark-blue);
+  }
+  
+  .section-subtitle {
+    color: var(--dark-gray);
+  }
+  
+  [data-theme="dark"] .section-title {
+    color: var(--primary-blue);
+  }
+  
+  [data-theme="dark"] .section-subtitle {
+    color: var(--text-color);
+  }
+  
+  /* Tarjetas y elementos */
+  .service-card,
+  .tech-card-front,
+  .about-feature,
+  .stat-item {
+    background-color: var(--card-bg);
+    box-shadow: 0 10px 30px var(--card-shadow);
+    border: 1px solid transparent;
+  }
+  
+  [data-theme="dark"] .service-card,
+  [data-theme="dark"] .tech-card-front,
+  [data-theme="dark"] .about-feature,
+  [data-theme="dark"] .stat-item {
+    border-color: #333;
+  }
+  
+  /* Tecnologías */
+  .tech-slider-container {
+    background-color: var(--card-bg);
+  }
+  
+  .tech-card-front h4 {
+    color: var(--dark-gray);
+  }
+  
+  [data-theme="dark"] .tech-card-front h4 {
+    color: var(--text-color);
+  }
+  
+  .tech-card-back {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: white;
+  }
+  
+  .slider-dot {
+    background-color: #ddd;
+  }
+  
+  [data-theme="dark"] .slider-dot {
+    background-color: #444;
+  }
+  
+  .slider-dot.active {
+    background-color: var(--primary-blue);
+  }
+  
+  /* Sobre nosotros */
+  .about-tagline {
+    color: var(--dark-gray);
+  }
+  
+  .about-description {
+    color: var(--dark-gray);
+  }
+  
+  [data-theme="dark"] .about-tagline,
+  [data-theme="dark"] .about-description {
+    color: var(--text-color);
+  }
+  
+  .feature-text h3 {
+    color: var(--dark-blue);
+  }
+  
+  .feature-text p {
+    color: var(--dark-gray);
+  }
+  
+  [data-theme="dark"] .feature-text h3 {
+    color: var(--primary-blue);
+  }
+  
+  [data-theme="dark"] .feature-text p {
+    color: var(--text-color);
+  }
+  
+  .stat-label {
+    color: var(--dark-gray);
+  }
+  
+  [data-theme="dark"] .stat-label {
+    color: var(--text-color);
+  }
+  
+  /* Contacto */
+  [data-theme="dark"] .contact-section {
+    background-color: #0a0a0a;
+  }
+  
+  [data-theme="dark"] .contact-background {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(5, 5, 5, 0.9));
+  }
+  
+  /* Terminal en modo oscuro */
+  [data-theme="dark"] #terminal-contact {
+    background-color: var(--terminal-bg);
+  }
+  
+  [data-theme="dark"] .terminal-header {
+    background-color: var(--terminal-header);
+  }
+  
+  [data-theme="dark"] .terminal-title {
+    color: var(--terminal-text);
+  }
+  
+  [data-theme="dark"] .terminal-body {
+    background-color: var(--terminal-bg);
+    border-color: var(--terminal-header);
+  }
+  
+  [data-theme="dark"] .terminal-content {
+    color: var(--terminal-text);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--footer-bg);
+  }
+  
+  .footer-links-column ul li a {
+    color: var(--footer-text);
+  }
+  
+  /* Etiquetas de servicios */
+  [data-theme="dark"] .service-tag {
+    background-color: rgba(77, 181, 255, 0.15);
+    color: var(--light-blue);
+  }
+  
+  /* Botón de modo oscuro */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--text-color);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(0, 136, 224, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .theme-toggle i {
+    font-size: 18px;
+    transition: var(--transition);
+  }
+  
+  /* Animación para el cambio de tema */
+  .theme-toggle .sun,
+  .theme-toggle .moon {
+    position: absolute;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .theme-toggle .sun {
+    transform: translateY(0);
+  }
+  
+  .theme-toggle .moon {
+    transform: translateY(40px);
+  }
+  
+  [data-theme="dark"] .theme-toggle .sun {
+    transform: translateY(-40px);
+  }
+  
+  [data-theme="dark"] .theme-toggle .moon {
+    transform: translateY(0);
+  }
+  
+  /* Ajustar el color del sol y la luna para que coincidan con el resto de elementos */
+  .theme-toggle .sun {
+    color: var(--text-color);
+  }
+  
+  .theme-toggle .moon {
+    color: var(--text-color);
+  }
+  
+  /* Ajustes para el orbe en modo oscuro */
+  [data-theme="dark"] .text-container {
+    color: var(--light-blue);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Ajustes para las tarjetas en modo oscuro */
+  [data-theme="dark"] .service-icon,
+  [data-theme="dark"] .tech-icon,
+  [data-theme="dark"] .feature-icon {
+    box-shadow: 0 10px 20px rgba(0, 136, 224, 0.2);
+  }
+  
+  /* Ajustes para el chatbot en modo oscuro */
+  [data-theme="dark"] .chatbot-panel {
+    background-color: var(--card-bg);
+  }
+  
+  [data-theme="dark"] .chatbot-message.assistant {
+    background-color: #2a2a2a;
+    color: var(--text-color);
+  }
+  
+  [data-theme="dark"] .chatbot-input-container {
+    background-color: #1a1a1a;
+    border-top: 1px solid #2a2a2a;
+  }
+  
+  [data-theme="dark"] .chatbot-input {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    color: var(--text-color);
+  }
+  
+  /* Ajustes para la animación de intro en modo oscuro */
+  [data-theme="dark"] .intro-animation {
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+  }
+  
+  /* Ajustes para el botón de reunión en modo oscuro */
+  [data-theme="dark"] .btn-meeting {
+    background-color: var(--primary-blue);
+    color: #121212;
+    box-shadow: 0 10px 25px -5px rgba(77, 181, 255, 0.5);
+  }
+  
+  [data-theme="dark"] .btn-meeting:hover {
+    background-color: var(--light-blue);
+    color: #121212;
+    border-color: var(--light-blue);
+  }
+  
+  /* Asegurar que la navbar en modo oscuro se mantenga oscura al hacer scroll */
+  [data-theme="dark"] .navbar.scrolled {
+    background-color: rgba(26, 26, 26, 0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ajustar el color de los enlaces en la navbar oscura */
+  [data-theme="dark"] .nav-link {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  
+  [data-theme="dark"] .nav-link:hover,
+  [data-theme="dark"] .nav-link.active {
+    color: var(--primary-blue);
+    background-color: transparent;
+  }
+  
+  /* Transición suave para todos los elementos */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Estilos específicos para el menú móvil en modo oscuro */
+  [data-theme="dark"] .menu-toggle .bar {
+    background-color: var(--text-color);
+  }
+  
+  /* Corregir el menú de navegación en modo oscuro */
+  [data-theme="dark"] .nav-menu {
+    background-color: var(--nav-menu-bg);
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  [data-theme="dark"] .nav-menu li {
+    border: none;
+  }
+  
+  /* Ajustes para el chatbot en modo oscuro */
+  [data-theme="dark"] .chatbot-button {
+    background-color: var(--primary-blue);
+  }
+  
+  [data-theme="dark"] .chatbot-header {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Ajustes para el botón de tema en modo oscuro */
+  .theme-toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .theme-toggle .sun,
+  .theme-toggle .moon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s ease;
+  }
+  
+  .theme-toggle .sun {
+    color: var(--text-color);
+  }
+  
+  .theme-toggle .moon {
+    color: #f5f5f5;
+  }
+  
+  /* Corregir el problema de la caja alrededor de los elementos de navegación */
+  [data-theme="dark"] .nav-menu li a {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  [data-theme="dark"] .nav-menu li a:hover,
+  [data-theme="dark"] .nav-menu li a.active {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Asegurar que no haya bordes visibles en los elementos de navegación */
+  .nav-menu li,
+  .nav-menu li a,
+  .nav-link {
+    border: none;
+    outline: none;
+  }
+  
+  [data-theme="dark"] .nav-menu li,
+  [data-theme="dark"] .nav-menu li a,
+  [data-theme="dark"] .nav-link {
+    border: none;
+    outline: none;
+  }
+  
+  /* Asegurar que no haya cajas o bordes alrededor de los elementos de navegación */
+  .navbar,
+  .navbar-container,
+  .nav-menu,
+  .nav-menu li,
+  .nav-link,
+  .theme-toggle {
+    box-sizing: border-box;
+  }
+  
+  /* Eliminar cualquier borde o sombra no deseada en modo oscuro */
+  [data-theme="dark"] .navbar *,
+  [data-theme="dark"] .navbar-container *,
+  [data-theme="dark"] .nav-menu *,
+  [data-theme="dark"] .nav-menu li *,
+  [data-theme="dark"] .nav-link,
+  [data-theme="dark"] .theme-toggle {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px var(--card-shadow);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 136, 224, 0.2);
+    outline: none;
+  }
+  
+  textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 136, 224, 0.3);
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 136, 224, 0.4);
+  }
+  
+  [data-theme="dark"] .form-control {
+    background-color: #2a2a2a;
+    border-color: #333;
+    color: var(--text-color);
+  }
+  
+  [data-theme="dark"] .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(77, 181, 255, 0.2);
+  }
+  
+  [data-theme="dark"] .submit-btn {
+    background-color: var(--primary-blue);
+    color: #121212;
+  }
+  
+  [data-theme="dark"] .submit-btn:hover {
+    background-color: var(--light-blue);
+  }
+  
+  /* Reemplazar las reglas existentes para el botón de contacto en modo oscuro con estas reglas más específicas */
+  
+  /* Botón de contacto en modo oscuro - con mayor especificidad y !important */
+  [data-theme="dark"] .nav-menu li a.btn-contacto {
+    background-color: #0088e0 !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  [data-theme="dark"] .nav-menu li a.btn-contacto:hover {
+    background-color: #003b73 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Eliminar estas reglas que pueden estar causando conflicto */
+  [data-theme="dark"] .btn-contacto {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+  }
+  
+  [data-theme="dark"] .btn-contacto:hover {
+    background-color: var(--dark-blue);
+    color: var(--white) !important;
+  }
+  
