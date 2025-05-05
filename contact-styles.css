@@ -396,3 +396,60 @@ textarea.terminal-input {
     font-size: 12px;
   }
 }
+
+/* Mobile improvements for terminal contact form */
+@media screen and (max-width: 768px) {
+  #terminal-contact {
+    transform: none !important; /* Remove 3D effect on mobile */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .terminal-body {
+    height: auto;
+    max-height: 60vh;
+    padding: 15px;
+  }
+
+  .terminal-input {
+    font-size: 16px !important; /* Prevents iOS zoom */
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  textarea.terminal-input {
+    min-height: 100px;
+  }
+
+  /* Improve tap targets */
+  .terminal-send-button,
+  .submit-button {
+    min-height: 44px;
+    padding: 12px 20px !important;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Fix for iOS scrolling */
+  .terminal-body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Styles for when input is focused */
+body.input-focused .terminal-body {
+  padding-bottom: 80px; /* Add extra space at bottom when keyboard is open */
+}
+
+/* Fix for iOS fixed positioning issues */
+@supports (-webkit-touch-callout: none) {
+  .terminal-container {
+    -webkit-transform: translateZ(0);
+  }
+
+  #terminal-contact {
+    transform: none !important;
+  }
+}
