@@ -331,6 +331,8 @@
     border-radius: 16px 16px 0 0;
     height: 70vh !important;
     max-height: 70vh;
+    bottom: 0;
+    transition: height 0.3s ease;
   }
 
   .chatbot-input {
@@ -347,6 +349,7 @@
   /* Fix for iOS scrolling */
   .chatbot-messages {
     -webkit-overflow-scrolling: touch;
+    transition: max-height 0.3s ease;
   }
 }
 
@@ -369,4 +372,14 @@ body.chatbot-focused .chatbot-panel {
     bottom: 0;
     height: 70vh !important;
   }
+
+  body.chatbot-focused .chatbot-panel {
+    height: 50vh !important; /* Even smaller on iOS when keyboard is open */
+  }
+}
+
+/* Añadir animación suave para la transición cuando aparece el teclado */
+.chatbot-panel,
+.chatbot-messages {
+  transition: all 0.3s ease;
 }
