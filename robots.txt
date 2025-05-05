@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Asegúrate de que los motores de búsqueda puedan acceder a tus recursos importantes
+Allow: /ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png
+Allow: /favicon_io/favicon.ico
+Allow: /favicon_io/favicon-16x16.png
+Allow: /favicon_io/favicon-32x32.png
+Allow: /favicon_io/apple-touch-icon.png
+Allow: /favicon_io/android-chrome-192x192.png
+Allow: /favicon_io/android-chrome-512x512.png
+Allow: /favicon_io/site.webmanifest
+
+# Sitemap
+Sitemap: https://globalcode.online/sitemap.xml
