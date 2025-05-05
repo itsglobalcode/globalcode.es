@@ -11,8 +11,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta name="theme-color" content="#0088e0">
     
     <!-- IMPORTANTE: Cargar el script de bloqueo de scroll antes que cualquier otro -->
     <script src="scroll-fix.js"></script>
@@ -509,7 +510,6 @@
 </section>
 
 <!-- Nueva sección de Contacto con formulario de Formspree -->
-<!-- Restaurar la terminal de contacto e integrar el formulario de Formspree -->
 <section id="contact" class="contact-section">
    <div class="contact-background"></div>
    
@@ -517,21 +517,25 @@
        <h2 class="section-title">Contacto</h2>
        <p class="section-subtitle">Inicia un nuevo proyecto con nosotros</p>
        
-       <div id="terminal-contact" class="terminal-container">
-           <div class="terminal-header">
-               <div class="terminal-buttons">
-                   <span class="terminal-button close"></span>
-                   <span class="terminal-button minimize"></span>
-                   <span class="terminal-button maximize"></span>
+       <div class="contact-form-container">
+           <form action="https://formspree.io/f/myzwzepp" method="POST" class="contact-form">
+               <div class="form-group">
+                   <label for="contact-name">Tu nombre</label>
+                   <input type="text" id="contact-name" name="name" required>
                </div>
-               <div class="terminal-title">Global_Code ~ Terminal</div>
-           </div>
-           
-           <div class="terminal-body">
-               <div class="terminal-content">
-                   <!-- El contenido se generará dinámicamente con JavaScript -->
+               
+               <div class="form-group">
+                   <label for="contact-email">Tu email</label>
+                   <input type="email" id="contact-email" name="email" required>
                </div>
-           </div>
+               
+               <div class="form-group">
+                   <label for="contact-message">Tu mensaje</label>
+                   <textarea id="contact-message" name="message" rows="5" required></textarea>
+               </div>
+               
+               <button type="submit" class="submit-button">Enviar Mensaje</button>
+           </form>
        </div>
    </div>
 </section>
