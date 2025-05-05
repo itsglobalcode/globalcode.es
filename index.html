@@ -7,12 +7,17 @@
     <meta name="description" content="Global Code - Empresa de desarrollo de software especializada en soluciones tecnológicas innovadoras">
     <title>Global Code - Desarrollo de Software</title>
     
-    <!-- Favicons -->
+    <!-- Favicons - Configuración mejorada para todos los navegadores -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="favicon_io/safari-pinned-tab.svg" color="#0088e0">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Global Code">
+    <meta name="application-name" content="Global Code">
+    <meta name="msapplication-TileColor" content="#0088e0">
+    <meta name="msapplication-config" content="favicon_io/browserconfig.xml">
     <meta name="theme-color" content="#0088e0">
     
     <!-- IMPORTANTE: Cargar el script de bloqueo de scroll antes que cualquier otro -->
@@ -534,6 +539,14 @@
               </div>
           </div>
       </div>
+      
+      <!-- Formulario oculto de Formspree para envío directo -->
+      <form id="formspree-form" action="https://formspree.io/f/myzwzepp" method="POST" style="display: none;">
+          <input type="text" name="name" id="form-name">
+          <input type="email" name="email" id="form-email">
+          <textarea name="message" id="form-message"></textarea>
+          <button type="submit">Enviar</button>
+      </form>
   </div>
 </section>
     </main>
@@ -678,3 +691,4 @@
     <script src="fix-hero-animation.js"></script>
 </body>
 </html>
+
