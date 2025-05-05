@@ -131,51 +131,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Adjust the height of the textarea dynamically when the user types
     chatbotInput.addEventListener("input", () => {
-      chatbotInput.style.height = "auto";
-      chatbotInput.style.height = Math.min(chatbotInput.scrollHeight, 100) + "px";
-    });
-    
+      chatbotInput.style.height = "auto"
+      chatbotInput.style.height = Math.min(chatbotInput.scrollHeight, 100) + "px"
+    })
+
     // Prevent zoom on focus for mobile devices
     chatbotInput.addEventListener("focus", () => {
       // Add a class to the body to help with styling
-      document.body.classList.add('chatbot-focused');
-      
+      document.body.classList.add("chatbot-focused")
+
       // On iOS, scroll the panel into view
       setTimeout(() => {
-        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
-      }, 300);
-    });
-    
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight
+      }, 300)
+
+      // Detectar si es un dispositivo móvil
+      if (window.innerWidth <= 768) {
+        // Ajustar la altura del panel cuando se abre el teclado
+        chatbotPanel.style.height = "50vh"
+        chatbotMessages.style.maxHeight = "30vh"
+      }
+    })
+
     chatbotInput.addEventListener("blur", () => {
-      document.body.classList.remove('chatbot-focused');
-    });
+      document.body.classList.remove("chatbot-focused")
+
+      // Restaurar altura normal cuando se cierra el teclado
+      if (window.innerWidth <= 768) {
+        chatbotPanel.style.height = "70vh"
+        chatbotMessages.style.maxHeight = "50vh"
+      }
+    })
 
     // Handle window resize and keyboard appearance on mobile
     window.addEventListener("resize", () => {
       if (chatbotPanel.style.display !== "none") {
-        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight
 
         // Adjust for mobile keyboard
-        if (window.innerWidth <= 576) {
+        if (window.innerWidth <= 768) {
           // Check if keyboard is likely open (significant height reduction)
-          const isKeyboardOpen = window.innerHeight < window.outerHeight * 0.75;
-          
+          const isKeyboardOpen = window.innerHeight < window.outerHeight * 0.75
+
           if (isKeyboardOpen) {
-            chatbotPanel.style.height = "60vh"; // Reduce height when keyboard is open
-            chatbotMessages.style.maxHeight = "40vh";
+            chatbotPanel.style.height = "50vh" // Reduce height when keyboard is open
+            chatbotMessages.style.maxHeight = "30vh"
+            document.body.classList.add("chatbot-focused")
           } else {
-            chatbotPanel.style.height = "70vh"; // Normal height
-            chatbotMessages.style.maxHeight = "50vh";
+            chatbotPanel.style.height = "70vh" // Normal height
+            chatbotMessages.style.maxHeight = "50vh"
+            document.body.classList.remove("chatbot-focused")
           }
-          
-          document.body.style.overflow = "hidden";
+
+          document.body.style.overflow = "hidden"
         } else {
-          document.body.style.overflow = "auto";
-          chatbotPanel.style.height = "";
-          chatbotMessages.style.maxHeight = "";
+          document.body.style.overflow = "auto"
+          chatbotPanel.style.height = ""
+          chatbotMessages.style.maxHeight = ""
         }
       }
-    });
+    })
 
     // Base de conocimiento para el chatbot
     const knowledgeBase = {
