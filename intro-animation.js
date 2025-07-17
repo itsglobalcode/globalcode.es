@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.scrollTop = 0
   }
 
+  // Ocultar inmediatamente el contenido del hero
+  const heroContent = document.querySelector(".hero-content")
+  if (heroContent) {
+    heroContent.style.opacity = "0"
+    heroContent.style.visibility = "hidden"
+    heroContent.style.transform = "translateY(30px)"
+  }
+
   // Eliminar la verificación de sessionStorage para que la animación se muestre siempre
   // Crear el contenedor de la animación de intro
   const introContainer = document.createElement("div")
@@ -58,6 +66,13 @@ document.addEventListener("DOMContentLoaded", () => {
     chatbotContainer.style.display = "none"
   }
 
+  // Ocultar la navbar durante la animación
+  const navbar = document.querySelector(".navbar")
+  if (navbar) {
+    navbar.style.opacity = "0"
+    navbar.style.visibility = "hidden"
+  }
+
   // Iniciar la secuencia de animación
   setTimeout(() => {
     introContainer.classList.add("animation-started")
@@ -99,6 +114,12 @@ document.addEventListener("DOMContentLoaded", () => {
           document.body.scrollTop = 0
         }
 
+        // Mostrar la navbar
+        if (navbar) {
+          navbar.style.opacity = "1"
+          navbar.style.visibility = "visible"
+        }
+
         // Ahora eliminar la animación
         introContainer.remove()
         document.body.style.overflow = "auto"
@@ -109,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Iniciar la animación del hero después de la intro
-        const heroContent = document.querySelector(".hero-content")
         if (heroContent) {
           heroContent.classList.add("hero-visible")
         }
@@ -137,6 +157,12 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.scrollTop = 0
     }
 
+    // Mostrar la navbar
+    if (navbar) {
+      navbar.style.opacity = "1"
+      navbar.style.visibility = "visible"
+    }
+
     // Iniciar la animación de salida
     introContainer.classList.add("animation-ending")
 
@@ -151,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Iniciar la animación del hero
-      const heroContent = document.querySelector(".hero-content")
       if (heroContent) {
         heroContent.classList.add("hero-visible")
       }
