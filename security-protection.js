@@ -15,7 +15,7 @@
     showNotification: true,
     warningMessage: "🔒 Código protegido - Inspección no permitida",
     disableDuringAnimation: true,
-    animationDuration: 4000, // 4 segundos
+    animationDuration: 1000, // 1 segundo
   }
 
   const animationStartTime = Date.now()
@@ -558,7 +558,7 @@
     setTimeout(() => {
       protectionActive = true
       console.log("Security protection activated")
-    }, CONFIG.animationDuration)
+    }, 1000)
   }
 
   // Initialize protection
