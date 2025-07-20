@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Automatizaciones con IA - Global Code</title>
+    
+    <!-- IMPORTANTE: Cargar el script de seguridad PRIMERO -->
+    <script src="security-protection.js"></script>
+    
+    <link rel="stylesheet" href="service-pages.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Agregar meta para evitar caché -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html" title="Ir al inicio">
+                    <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" style="background: transparent;">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#technologies" class="nav-link">Tecnologías</a></li>
+                <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="index.html#contact" class="nav-link btn-contacto">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                        <i class="fas fa-sun sun"></i>
+                        <i class="fas fa-moon moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main class="main-content">
+        <section class="hero-service">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="service-icon-large">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h1 class="service-title">Automatizaciones con IA</h1>
+                    <p class="service-subtitle">Chatbots inteligentes y automatización de procesos que transforman tu negocio</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-main">
+                        <div class="detail-card">
+                            <h2>¿Qué incluye nuestro servicio?</h2>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Chatbots Inteligentes</h3>
+                                        <p>Asistentes virtuales con procesamiento de lenguaje natural que atienden clientes 24/7 y mejoran la experiencia de usuario.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Automatización de Procesos</h3>
+                                        <p>Sistemas que automatizan tareas repetitivas, reducen errores humanos y liberan tiempo para actividades estratégicas.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Data Scraping Inteligente</h3>
+                                        <p>Extracción automatizada de datos de múltiples fuentes con análisis en tiempo real para insights de negocio.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Análisis Predictivo</h3>
+                                        <p>Modelos de machine learning que predicen tendencias, comportamientos de clientes y optimizan la toma de decisiones.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Integración con Sistemas</h3>
+                                        <p>Conexión fluida con CRM, ERP, bases de datos existentes y herramientas de terceros sin interrumpir operaciones.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Monitoreo y Optimización</h3>
+                                        <p>Dashboard de métricas en tiempo real con ajustes automáticos para mejorar continuamente el rendimiento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Tecnologías de IA que utilizamos</h2>
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>TensorFlow</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span>OpenAI GPT</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Dialogflow</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Pandas</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-cloud"></i>
+                                    <span>AWS AI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Casos de uso transformadores</h2>
+                            <div class="use-cases">
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Atención al Cliente 24/7</h3>
+                                        <p>Chatbot que resuelve el 80% de consultas automáticamente, reduce tiempos de espera y mejora la satisfacción del cliente.</p>
+                                        <div class="benefit">
+                                            <i class="fas fa-arrow-up"></i>
+                                            <span>Reduce costos de soporte en 60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-file-invoice"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Procesamiento de Facturas</h3>
+                                        <p>Automatización completa desde recepción hasta contabilización, con validación inteligente y detección de anomalías.</p>
+                                        <div class="benefit">
+                                            <i class="fas fa-clock"></i>
+                                            <span>Ahorra 15 horas semanales</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Monitoreo de Competencia</h3>
+                                        <p>Sistema que rastrea precios, productos y estrategias de competidores para mantener ventaja competitiva.</p>
+                                        <div class="benefit">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>Aumenta margen de ganancia 25%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Marketing Personalizado</h3>
+                                        <p>IA que segmenta audiencias, personaliza mensajes y optimiza campañas automáticamente según el comportamiento.</p>
+                                        <div class="benefit">
+                                            <i class="fas fa-target"></i>
+                                            <span>Mejora conversión en 40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>ROI y beneficios medibles</h2>
+                            <div class="roi-metrics">
+                                <div class="roi-item">
+                                    <div class="roi-number">75%</div>
+                                    <div class="roi-label">Reducción en tiempo de procesos manuales</div>
+                                </div>
+                                <div class="roi-item">
+                                    <div class="roi-number">90%</div>
+                                    <div class="roi-label">Precisión en análisis de datos</div>
+                                </div>
+                                <div class="roi-item">
+                                    <div class="roi-number">24/7</div>
+                                    <div class="roi-label">Disponibilidad de servicios automatizados</div>
+                                </div>
+                                <div class="roi-item">
+                                    <div class="roi-number">300%</div>
+                                    <div class="roi-label">ROI promedio en el primer año</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-sidebar">
+                        <div class="cta-card">
+                            <h3>¿Listo para automatizar?</h3>
+                            <p>Descubre cómo la IA puede transformar tu negocio y generar ahorros inmediatos.</p>
+                            <a href="index.html#contact" class="cta-button">
+                                <i class="fas fa-magic"></i>
+                                Consulta Gratuita
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Tiempo de implementación</h3>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Chatbot básico: 2-3 semanas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Automatización compleja: 6-8 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Garantías</h3>
+                            <div class="info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>ROI positivo en 6 meses</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Soporte y ajustes incluidos</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Capacitación del equipo</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Sectores que transformamos</h3>
+                            <div class="info-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>E-commerce</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Salud</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-university"></i>
+                                <span>Finanzas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-industry"></i>
+                                <span>Manufactura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo">
+                    <p class="footer-tagline">Convierte tus ideas en realidad</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#services">Servicios</a></li>
+                            <li><a href="index.html#technologies">Tecnologías</a></li>
+                            <li><a href="index.html#about">Sobre Nosotros</a></li>
+                            <li><a href="index.html#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="web-apps.html">Web Apps</a></li>
+                            <li><a href="apps-moviles.html">Apps Móviles</a></li>
+                            <li><a href="automatizaciones-ia.html">Automatizaciones con IA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contacto</h3>
+                        <ul class="footer-contact-info">
+                            <li><i class="fas fa-envelope"></i> itsglobalcodeinfo@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +34 628 38 32 04</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme-toggle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

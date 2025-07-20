@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Web Apps - Global Code</title>
+    
+    <!-- IMPORTANTE: Cargar el script de seguridad PRIMERO -->
+    <script src="security-protection.js"></script>
+    
+    <link rel="stylesheet" href="service-pages.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Agregar meta para evitar caché -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" style="background: transparent;">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#technologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contact" class="nav-link btn-contacto">Contacto</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <i class="fas fa-sun sun"></i>
+                            <i class="fas fa-moon moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-service">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="service-icon-large">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h1 class="service-title">Web Apps</h1>
+                    <p class="service-subtitle">Plataformas SaaS y herramientas internas que optimizan tu negocio</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-main">
+                        <div class="detail-card">
+                            <h2>¿Qué incluye nuestro servicio?</h2>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Plataformas SaaS Completas</h3>
+                                        <p>Aplicaciones web escalables con sistemas de suscripción, gestión de usuarios y paneles de administración avanzados.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Herramientas Internas</h3>
+                                        <p>Sistemas personalizados para gestión de inventarios, CRM, ERP y automatización de procesos empresariales.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Dashboards Interactivos</h3>
+                                        <p>Paneles de control con visualización de datos en tiempo real, métricas KPI y reportes automatizados.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>APIs y Integraciones</h3>
+                                        <p>Conexión con servicios externos, APIs REST, webhooks y sincronización de datos entre plataformas.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Seguridad Avanzada</h3>
+                                        <p>Autenticación multifactor, encriptación de datos, roles de usuario y cumplimiento de normativas GDPR.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Escalabilidad Cloud</h3>
+                                        <p>Arquitectura preparada para crecer con tu negocio, optimizada para alto tráfico y disponibilidad 24/7.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Tecnologías que utilizamos</h2>
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Casos de uso populares</h2>
+                            <div class="use-cases">
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Plataforma de Analytics</h3>
+                                        <p>Dashboard para visualizar métricas de negocio, generar reportes automáticos y tomar decisiones basadas en datos.</p>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Sistema CRM</h3>
+                                        <p>Gestión completa de clientes, seguimiento de ventas, automatización de marketing y análisis de conversión.</p>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-boxes"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Gestión de Inventarios</h3>
+                                        <p>Control de stock en tiempo real, alertas automáticas, gestión de proveedores y optimización de almacén.</p>
+                                    </div>
+                                </div>
+                                <div class="use-case">
+                                    <div class="use-case-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="use-case-content">
+                                        <h3>Plataforma E-learning</h3>
+                                        <p>Sistema de cursos online, seguimiento de progreso, certificaciones y gestión de estudiantes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-sidebar">
+                        <div class="cta-card">
+                            <h3>¿Tienes una idea?</h3>
+                            <p>Conversemos sobre tu proyecto y te mostraremos cómo convertirlo en una aplicación web exitosa.</p>
+                            <a href="index.html#contact" class="cta-button">
+                                <i class="fas fa-lightbulb"></i>
+                                Consulta Gratuita
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Tiempo de desarrollo</h3>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>MVP: 4-6 semanas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Plataforma completa: 8-12 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Lo que incluimos</h3>
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <span>Código fuente completo</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Despliegue en la nube</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-life-ring"></i>
+                                <span>3 meses de soporte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo">
+                    <p class="footer-tagline">Convierte tus ideas en realidad</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#services">Servicios</a></li>
+                            <li><a href="index.html#technologies">Tecnologías</a></li>
+                            <li><a href="index.html#about">Sobre Nosotros</a></li>
+                            <li><a href="index.html#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="web-apps.html">Web Apps</a></li>
+                            <li><a href="apps-moviles.html">Apps Móviles</a></li>
+                            <li><a href="automatizaciones-ia.html">Automatizaciones con IA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contacto</h3>
+                        <ul class="footer-contact-info">
+                            <li><i class="fas fa-envelope"></i> itsglobalcodeinfo@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +34 628 38 32 04</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme-toggle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

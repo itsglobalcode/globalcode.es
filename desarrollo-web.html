@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Desarrollo Web - Global Code</title>
+    
+    <!-- IMPORTANTE: Cargar el script de seguridad PRIMERO -->
+    <script src="security-protection.js"></script>
+    
+    <link rel="stylesheet" href="service-pages.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Agregar meta para evitar caché -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" style="background: transparent;">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#technologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contact" class="nav-link btn-contacto">Contacto</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <i class="fas fa-sun sun"></i>
+                            <i class="fas fa-moon moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-service">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="service-icon-large">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h1 class="service-title">Desarrollo Web</h1>
+                    <p class="service-subtitle">Sitios corporativos y landing pages que convierten visitantes en clientes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-main">
+                        <div class="detail-card">
+                            <h2>¿Qué incluye nuestro servicio?</h2>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Sitios Corporativos Profesionales</h3>
+                                        <p>Diseños elegantes y funcionales que reflejan la identidad de tu marca y generan confianza en tus clientes potenciales.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Landing Pages de Alto Impacto</h3>
+                                        <p>Páginas optimizadas para conversión con llamadas a la acción estratégicas que maximizan tus resultados de marketing.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Diseño Responsive</h3>
+                                        <p>Experiencia perfecta en todos los dispositivos: móviles, tablets y escritorio, garantizando accesibilidad total.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Optimización SEO</h3>
+                                        <p>Estructura y contenido optimizado para motores de búsqueda, mejorando tu visibilidad online desde el día uno.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Velocidad de Carga Optimizada</h3>
+                                        <p>Sitios web ultrarrápidos que mejoran la experiencia del usuario y el posicionamiento en Google.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Integración con Analytics</h3>
+                                        <p>Seguimiento completo del comportamiento de usuarios para optimizar continuamente tu presencia digital.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Tecnologías que utilizamos</h2>
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Proceso de desarrollo</h2>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Análisis y Planificación</h3>
+                                        <p>Estudiamos tu negocio, competencia y objetivos para crear una estrategia digital efectiva.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Diseño UX/UI</h3>
+                                        <p>Creamos wireframes y prototipos que priorizan la experiencia del usuario y la conversión.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Desarrollo</h3>
+                                        <p>Programamos tu sitio web con las mejores prácticas y tecnologías más actuales del mercado.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3>Testing y Optimización</h3>
+                                        <p>Realizamos pruebas exhaustivas en todos los dispositivos y optimizamos el rendimiento.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h3>Lanzamiento y Soporte</h3>
+                                        <p>Publicamos tu sitio y te brindamos soporte continuo para mantenerlo actualizado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-sidebar">
+                        <div class="cta-card">
+                            <h3>¿Listo para comenzar?</h3>
+                            <p>Obtén una consulta gratuita y descubre cómo podemos transformar tu presencia digital.</p>
+                            <a href="index.html#contact" class="cta-button">
+                                <i class="fas fa-rocket"></i>
+                                Consulta Gratuita
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Tiempo de entrega</h3>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Landing Page: 1-2 semanas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Sitio Corporativo: 2-4 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Garantías incluidas</h3>
+                            <div class="info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>30 días de soporte gratuito</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>100% responsive</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Velocidad optimizada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo">
+                    <p class="footer-tagline">Convierte tus ideas en realidad</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#services">Servicios</a></li>
+                            <li><a href="index.html#technologies">Tecnologías</a></li>
+                            <li><a href="index.html#about">Sobre Nosotros</a></li>
+                            <li><a href="index.html#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="web-apps.html">Web Apps</a></li>
+                            <li><a href="apps-moviles.html">Apps Móviles</a></li>
+                            <li><a href="automatizaciones-ia.html">Automatizaciones con IA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contacto</h3>
+                        <ul class="footer-contact-info">
+                            <li><i class="fas fa-envelope"></i> itsglobalcodeinfo@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +34 628 38 32 04</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme-toggle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

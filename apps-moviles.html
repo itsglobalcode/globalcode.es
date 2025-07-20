@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Apps Móviles - Global Code</title>
+    
+    <!-- IMPORTANTE: Cargar el script de seguridad PRIMERO -->
+    <script src="security-protection.js"></script>
+    
+    <link rel="stylesheet" href="service-pages.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Agregar meta para evitar caché -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo" style="background: transparent;">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#technologies" class="nav-link">Tecnologías</a></li>
+                    <li><a href="index.html#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contact" class="nav-link btn-contacto">Contacto</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <i class="fas fa-sun sun"></i>
+                            <i class="fas fa-moon moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-service">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="service-icon-large">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h1 class="service-title">Apps Móviles</h1>
+                    <p class="service-subtitle">Aplicaciones nativas y multiplataforma para iOS y Android</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-main">
+                        <div class="detail-card">
+                            <h2>¿Qué incluye nuestro servicio?</h2>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Desarrollo Nativo iOS</h3>
+                                        <p>Apps optimizadas para iPhone y iPad con Swift, aprovechando al máximo las capacidades del ecosistema Apple.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Desarrollo Nativo Android</h3>
+                                        <p>Aplicaciones para dispositivos Android con Kotlin, optimizadas para diferentes tamaños de pantalla y versiones del OS.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Apps Multiplataforma</h3>
+                                        <p>Desarrollo con React Native o Flutter para lanzar simultáneamente en iOS y Android con un solo código base.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>UI/UX Optimizada</h3>
+                                        <p>Interfaces intuitivas que siguen las guías de diseño de cada plataforma para una experiencia familiar al usuario.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Integración con APIs</h3>
+                                        <p>Conexión con servicios backend, APIs REST, bases de datos en la nube y servicios de terceros.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h3>Publicación en Stores</h3>
+                                        <p>Gestión completa del proceso de publicación en App Store y Google Play, incluyendo optimización ASO.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Tecnologías que utilizamos</h2>
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-apple"></i>
+                                    <span>Swift</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-android"></i>
+                                    <span>Kotlin</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React Native</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Flutter</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Firebase</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS Mobile</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Tipos de aplicaciones</h2>
+                            <div class="app-types">
+                                <div class="app-type">
+                                    <div class="app-type-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="app-type-content">
+                                        <h3>E-commerce</h3>
+                                        <p>Tiendas online móviles con carrito de compras, pasarelas de pago, gestión de pedidos y notificaciones push.</p>
+                                    </div>
+                                </div>
+                                <div class="app-type">
+                                    <div class="app-type-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="app-type-content">
+                                        <h3>Redes Sociales</h3>
+                                        <p>Plataformas de interacción social con chat en tiempo real, compartir contenido y sistemas de gamificación.</p>
+                                    </div>
+                                </div>
+                                <div class="app-type">
+                                    <div class="app-type-icon">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <div class="app-type-content">
+                                        <h3>Salud y Fitness</h3>
+                                        <p>Apps de seguimiento de actividad, integración con wearables, planes personalizados y análisis de datos.</p>
+                                    </div>
+                                </div>
+                                <div class="app-type">
+                                    <div class="app-type-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="app-type-content">
+                                        <h3>Productividad</h3>
+                                        <p>Herramientas de gestión de tareas, colaboración en equipo, sincronización en la nube y trabajo offline.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <h2>Proceso de desarrollo</h2>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Investigación y Estrategia</h3>
+                                        <p>Análisis de mercado, definición de usuarios objetivo y arquitectura de la información.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Diseño UX/UI</h3>
+                                        <p>Wireframes, prototipos interactivos y diseño visual adaptado a cada plataforma.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Desarrollo</h3>
+                                        <p>Programación de la app con metodologías ágiles y testing continuo en dispositivos reales.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3>Testing y QA</h3>
+                                        <p>Pruebas exhaustivas de funcionalidad, rendimiento y compatibilidad en múltiples dispositivos.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h3>Lanzamiento</h3>
+                                        <p>Publicación en las tiendas de aplicaciones y estrategia de marketing para el lanzamiento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-sidebar">
+                        <div class="cta-card">
+                            <h3>¿Tienes una idea de app?</h3>
+                            <p>Hablemos sobre tu proyecto móvil y te ayudaremos a convertirlo en una aplicación exitosa.</p>
+                            <a href="index.html#contact" class="cta-button">
+                                <i class="fas fa-rocket"></i>
+                                Consulta Gratuita
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Tiempo de desarrollo</h3>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>App simple: 6-8 semanas</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>App compleja: 12-16 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Plataformas soportadas</h3>
+                            <div class="info-item">
+                                <i class="fab fa-apple"></i>
+                                <span>iOS 14+ (iPhone/iPad)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-android"></i>
+                                <span>Android 8+ (Phones/Tablets)</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Servicios incluidos</h3>
+                            <div class="info-item">
+                                <i class="fas fa-store"></i>
+                                <span>Publicación en stores</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics integrado</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tools"></i>
+                                <span>6 meses de mantenimiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="ChatGPT Image Apr 24, 2025 at 08_55_23 PM.png" alt="Global Code Logo">
+                    <p class="footer-tagline">Convierte tus ideas en realidad</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#services">Servicios</a></li>
+                            <li><a href="index.html#technologies">Tecnologías</a></li>
+                            <li><a href="index.html#about">Sobre Nosotros</a></li>
+                            <li><a href="index.html#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="web-apps.html">Web Apps</a></li>
+                            <li><a href="apps-moviles.html">Apps Móviles</a></li>
+                            <li><a href="automatizaciones-ia.html">Automatizaciones con IA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contacto</h3>
+                        <ul class="footer-contact-info">
+                            <li><i class="fas fa-envelope"></i> itsglobalcodeinfo@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +34 628 38 32 04</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme-toggle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
