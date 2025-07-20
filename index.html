@@ -149,6 +149,7 @@
                     <span class="service-tag">Sitios corporativos</span>
                     <span class="service-tag">Landing pages</span>
                 </div>
+                <a href="desarrollo-web.html" class="service-link">Ver más detalles</a>
             </div>
             
             <!-- Servicio 2: Web Apps -->
@@ -162,6 +163,7 @@
                     <span class="service-tag">SaaS</span>
                     <span class="service-tag">Herramientas internas</span>
                 </div>
+                <a href="web-apps.html" class="service-link">Ver más detalles</a>
             </div>
             
             <!-- Servicio 3: Apps Móviles -->
@@ -175,6 +177,7 @@
                     <span class="service-tag">iOS</span>
                     <span class="service-tag">Android</span>
                 </div>
+                <a href="apps-moviles.html" class="service-link">Ver más detalles</a>
             </div>
             
             <!-- Servicio 4: Automatizaciones con IA -->
@@ -189,6 +192,7 @@
                     <span class="service-tag">Procesos</span>
                     <span class="service-tag">Data scraping</span>
                 </div>
+                <a href="automatizaciones-ia.html" class="service-link">Ver más detalles</a>
             </div>
         </div>
     </div>
@@ -662,10 +666,10 @@
                 <div class="footer-links-column">
                     <h3>Servicios</h3>
                     <ul>
-                        <li><a href="#services">Desarrollo Web</a></li>
-                        <li><a href="#services">Web Apps</a></li>
-                        <li><a href="#services">Apps Móviles</a></li>
-                        <li><a href="#services">Automatizaciones con IA</a></li>
+                        <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                        <li><a href="web-apps.html">Web Apps</a></li>
+                        <li><a href="apps-moviles.html">Apps Móviles</a></li>
+                        <li><a href="automatizaciones-ia.html">Automatizaciones con IA</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-column">
@@ -678,8 +682,8 @@
                 </div>
             </div>
         </div>
-
-
+    </div>
+</footer>
 
    
     <!-- Script para mostrar el estado de las cookies (solo para demostración) -->
@@ -689,7 +693,7 @@
             function getCookie(name) {
                 const nameEQ = name + "=";
                 const ca = document.cookie.split(';');
-                for (let i = 0; i < ca.length; i++) {
+                for (let i = 0; < ca.length; i++) {
                     let c = ca[i];
                     while (c.charAt(0) === ' ') c = c.substring(1, c.length);
                     if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
@@ -717,5 +721,25 @@
 
     <!-- Agregar el nuevo script para arreglar la animación del hero -->
     <script src="fix-hero-animation.js"></script>
+<style>
+.service-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #0088e0, #00d4ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 136, 224, 0.3);
+    color: white;
+    text-decoration: none;
+}
+</style>
 </body>
 </html>
